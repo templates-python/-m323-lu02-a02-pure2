@@ -1,24 +1,31 @@
 {
-  "tests": [
-    {
-      "name": "Input/Output",
-      "setup": "",
-      "run": "python3 main.py",
-      "input": "",
-      "output": "Total: 78.75\n",
-      "comparison": "included",
-      "timeout": 1,
-      "points": 1
-    },
-    {
-      "name": "Pytest",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -v  -k \"test\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 2
-    }
-  ]
+"tests": [
+{"name": "test_total_with_discount",
+"setup": "sudo -H pip3 install -r requirements.txt",
+"run": "pytest -v  -k \"test_total_with_discount\"",
+"input": "",
+"output": "",
+"comparison": "included",
+"timeout": 10,
+"points": 1
+},
+{"name": "test_total_without_discount",
+"setup": "sudo -H pip3 install -r requirements.txt",
+"run": "pytest -v  -k \"test_total_without_discount\"",
+"input": "",
+"output": "",
+"comparison": "included",
+"timeout": 10,
+"points": 1
+},
+{"name": "test_empty_basket",
+"setup": "sudo -H pip3 install -r requirements.txt",
+"run": "pytest -v  -k \"test_empty_basket\"",
+"input": "",
+"output": "",
+"comparison": "included",
+"timeout": 10,
+"points": 1
+}
+]
 }
