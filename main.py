@@ -1,12 +1,26 @@
-def calculate():
-    """
-    calculates the total
-    :return: None
-    """
-    price = 15.75
-    quantity = 3  # TODO change quantity to 5
-    print(f'Total: {price * quantity}')
+BASKET = [{'Produkt': 'T-Shirt', 'Preis': 20}, {'Produkt': 'Hose', 'Preis': 50}]
+DISCOUNT = 0.1
 
+
+# Unpure function
+def calculate_total_unpure():
+    global BASKET, DISCOUNT
+    total = sum(item['Preis'] for item in BASKET)
+    discount = total * DISCOUNT
+    total = total - discount
+    print(f'Gesamtpreis: {total}')
+    return total
+
+
+# Pure function
+def calculate_total_pure():
+    """Berechnet den Gesamtpreis eines Warenkorbs mit einem Rabatt."""
+    pass
 
 if __name__ == '__main__':
-    calculate()
+    print('Unpure function:')
+    calculate_total_unpure()
+
+    print('Pure function:')
+    total = calculate_total_pure()
+    print(f'Gesamtpreis: {total}')
