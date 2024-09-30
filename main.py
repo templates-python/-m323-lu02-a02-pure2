@@ -17,6 +17,7 @@ def calculate_total_pure():
     """Berechnet den Gesamtpreis eines Warenkorbs mit einem Rabatt."""
     pass
 
+
 if __name__ == '__main__':
     print('Unpure function:')
     calculate_total_unpure()
