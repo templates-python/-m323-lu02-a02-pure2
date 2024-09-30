@@ -20,6 +20,7 @@ def calculate_total_pure(basket, discount):
     total = total - discount_amount
     return total
 
+
 if __name__ == '__main__':
     print('Unpure function:')
     calculate_total_unpure()
